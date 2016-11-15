@@ -24,24 +24,42 @@
                                     <constraint firstAttribute="height" constant="50" id="sUX-7x-Ydp"/>
                                 </constraints>
                                 <state key="normal" title="Repeatative Notification"/>
+                                <connections>
+                                    <action selector="repeatNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jys-wd-Mze"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59W-cm-EPt">
                                 <state key="normal" title="Responsive Notification"/>
+                                <connections>
+                                    <action selector="responsiveNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x38-p3-7aL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-5y-csN">
                                 <state key="normal" title="Location Notification (Launch Image)"/>
+                                <connections>
+                                    <action selector="locationNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQX-g3-HtI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmZ-dh-sGQ">
                                 <state key="normal" title=" Date Notification (Custom Sound)"/>
+                                <connections>
+                                    <action selector="dateNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zez-6r-eBB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSj-NT-COO">
                                 <state key="normal" title="Interval Notification  (Default Sound)"/>
+                                <connections>
+                                    <action selector="intervalNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NgI-Hs-Pki"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIE-3q-pwi">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="p93-Hd-hBF"/>
                                 </constraints>
                                 <state key="normal" title="Cancel Notification"/>
+                                <connections>
+                                    <action selector="cancelNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnu-zA-VdQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Notification for iOS10 and above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp9-ox-RO8">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
@@ -60,7 +78,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HIE-3q-pwi" secondAttribute="bottom" id="Bv9-Jd-0PC"/>
                             <constraint firstItem="QSj-NT-COO" firstAttribute="trailing" secondItem="bmZ-dh-sGQ" secondAttribute="trailing" id="DBR-9G-eWp"/>
                             <constraint firstItem="Fls-RZ-bQM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EOz-d9-HnH"/>
-                            <constraint firstItem="Fls-RZ-bQM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hht-xX-UMI"/>
                             <constraint firstItem="VbP-5y-csN" firstAttribute="leading" secondItem="59W-cm-EPt" secondAttribute="leading" id="JZc-uC-lKx"/>
                             <constraint firstItem="Vp9-ox-RO8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KHe-ti-aUN"/>
                             <constraint firstItem="Fls-RZ-bQM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="WBO-YT-oJk"/>
