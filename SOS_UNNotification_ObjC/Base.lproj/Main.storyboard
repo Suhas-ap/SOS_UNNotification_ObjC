@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-RZ-bQM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sUX-7x-Ydp"/>
+                                </constraints>
+                                <state key="normal" title="Repeatative Notification"/>
+                                <connections>
+                                    <action selector="repeatNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jys-wd-Mze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59W-cm-EPt">
+                                <state key="normal" title="Responsive Notification"/>
+                                <connections>
+                                    <action selector="responsiveNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x38-p3-7aL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-5y-csN">
+                                <state key="normal" title="Location Notification (Launch Image)"/>
+                                <connections>
+                                    <action selector="locationNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQX-g3-HtI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmZ-dh-sGQ">
+                                <state key="normal" title=" Date Notification (Custom Sound)"/>
+                                <connections>
+                                    <action selector="dateNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zez-6r-eBB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSj-NT-COO">
+                                <state key="normal" title="Interval Notification  (Default Sound)"/>
+                                <connections>
+                                    <action selector="intervalNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NgI-Hs-Pki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIE-3q-pwi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p93-Hd-hBF"/>
+                                </constraints>
+                                <state key="normal" title="Cancel Notification"/>
+                                <connections>
+                                    <action selector="cancelNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnu-zA-VdQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Notification for iOS10 and above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp9-ox-RO8">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VbP-5y-csN" firstAttribute="top" secondItem="59W-cm-EPt" secondAttribute="bottom" constant="15" id="09M-2a-qJU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fls-RZ-bQM" secondAttribute="trailing" constant="9" id="1GI-2Y-aIJ"/>
+                            <constraint firstItem="VbP-5y-csN" firstAttribute="trailing" secondItem="59W-cm-EPt" secondAttribute="trailing" id="3FN-Aw-fhE"/>
+                            <constraint firstItem="Vp9-ox-RO8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5DE-gK-R9Q"/>
+                            <constraint firstItem="bmZ-dh-sGQ" firstAttribute="leading" secondItem="Fls-RZ-bQM" secondAttribute="leading" id="90E-ks-YEd"/>
+                            <constraint firstItem="59W-cm-EPt" firstAttribute="leading" secondItem="Fls-RZ-bQM" secondAttribute="leading" id="AGd-97-6G5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HIE-3q-pwi" secondAttribute="bottom" id="Bv9-Jd-0PC"/>
+                            <constraint firstItem="QSj-NT-COO" firstAttribute="trailing" secondItem="bmZ-dh-sGQ" secondAttribute="trailing" id="DBR-9G-eWp"/>
+                            <constraint firstItem="Fls-RZ-bQM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EOz-d9-HnH"/>
+                            <constraint firstItem="VbP-5y-csN" firstAttribute="leading" secondItem="59W-cm-EPt" secondAttribute="leading" id="JZc-uC-lKx"/>
+                            <constraint firstItem="Vp9-ox-RO8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KHe-ti-aUN"/>
+                            <constraint firstItem="Fls-RZ-bQM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="WBO-YT-oJk"/>
+                            <constraint firstItem="bmZ-dh-sGQ" firstAttribute="trailing" secondItem="Fls-RZ-bQM" secondAttribute="trailing" id="WvH-T7-sDh"/>
+                            <constraint firstItem="QSj-NT-COO" firstAttribute="height" secondItem="bmZ-dh-sGQ" secondAttribute="height" id="YCr-xL-RBv"/>
+                            <constraint firstItem="QSj-NT-COO" firstAttribute="leading" secondItem="bmZ-dh-sGQ" secondAttribute="leading" id="ccw-ST-XRC"/>
+                            <constraint firstItem="VbP-5y-csN" firstAttribute="height" secondItem="59W-cm-EPt" secondAttribute="height" id="cxZ-et-kGa"/>
+                            <constraint firstItem="bmZ-dh-sGQ" firstAttribute="top" secondItem="QSj-NT-COO" secondAttribute="bottom" constant="15" id="hEr-aQ-kGW"/>
+                            <constraint firstItem="Fls-RZ-bQM" firstAttribute="top" secondItem="bmZ-dh-sGQ" secondAttribute="bottom" constant="15" id="hln-K3-9hA"/>
+                            <constraint firstAttribute="trailing" secondItem="HIE-3q-pwi" secondAttribute="trailing" constant="25" id="ie7-Ak-MnU"/>
+                            <constraint firstItem="HIE-3q-pwi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="oe1-pP-mNp"/>
+                            <constraint firstItem="59W-cm-EPt" firstAttribute="top" secondItem="Fls-RZ-bQM" secondAttribute="bottom" constant="15" id="vrN-7r-zfv"/>
+                            <constraint firstItem="59W-cm-EPt" firstAttribute="trailing" secondItem="Fls-RZ-bQM" secondAttribute="trailing" id="wCX-c1-slD"/>
+                            <constraint firstItem="bmZ-dh-sGQ" firstAttribute="height" secondItem="Fls-RZ-bQM" secondAttribute="height" id="wyP-RO-VOf"/>
+                            <constraint firstItem="59W-cm-EPt" firstAttribute="height" secondItem="Fls-RZ-bQM" secondAttribute="height" id="yfO-4V-amc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
